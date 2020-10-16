@@ -19,10 +19,7 @@ apt:
     packages:
     - postgresql-10
     - postgresql-client-10
-env:
-  global:
-  - PGPORT=5433  
-  
+
 install:
   - pip install codespell flake8 pytest-cov -r requirements.txt -r test_requirements.txt
 
